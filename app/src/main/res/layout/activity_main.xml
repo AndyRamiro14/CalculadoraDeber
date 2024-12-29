@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:background="@drawable/calcu"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_marginHorizontal="10dp"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#A4B7FB"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="CALCULADORA DE ANDY"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/etnum1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#383636"
+        android:hint="Ingresa el primer número"
+        android:layout_marginTop="25dp"
+        android:inputType="number"
+        android:textColorHint="@color/white"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/etnum2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#383636"
+        android:textSize="20dp"
+        android:textColorHint="@color/white"
+        android:hint="Ingrese el segundo numero"
+        android:layout_marginTop="3dp"
+        android:inputType="number"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:background="@color/black"
+        android:padding="4dp"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content">
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSumar"
+        android:layout_margin="2dp"
+        android:textSize="20dp"
+        android:background="#C36565"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnRestar"
+        android:layout_margin="2dp"
+        android:textSize="20dp"
+        android:background="#B9FFE9"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnMultiplicar"
+            android:layout_margin="2dp"
+            android:textSize="20dp"
+            android:background="#F1A3FF"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnDividir"
+            android:layout_margin="2dp"
+            android:textSize="20dp"
+            android:background="#FBF5BF"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tvResultado"
+        android:layout_width="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:background="#A10055FF"
+        android:layout_marginHorizontal="@dimen/cardview_default_elevation"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:text="Resultado" />
+
+
+</LinearLayout>
